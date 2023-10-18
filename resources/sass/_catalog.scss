@@ -1,0 +1,20 @@
+@import "var";
+@import "mixins";
+
+.catalog {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+    &__search {
+
+    }
+
+    &__field {
+        display: grid;
+        grid-template-columns: 200px auto;
+        gap: 30px;
+        margin-top: 30px;
+    }
+}

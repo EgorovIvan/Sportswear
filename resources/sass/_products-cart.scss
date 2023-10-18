@@ -1,0 +1,158 @@
+@import "var";
+@import "mixins";
+
+.products-cart {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+
+    &__list {
+        display: block;
+
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 800px;
+        height: 200px;
+        margin: 10px 0;
+        border: 1px solid rgba(255, 212, 0, 0.55);
+    }
+
+    &__item img {
+        height: 100%;
+    }
+
+    &__item-info {
+        display: block;
+        text-align: start;
+        width: 340px;
+    }
+
+    &__item-name {
+        padding: 20px 0 10px 0;
+        font-family: 'Helvetica',sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__item-description {
+        padding: 10px 0;
+        font-family: 'Helvetica',sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    &__item-total {
+        display: block;
+        width: 180px;
+    }
+
+    &__item-price {
+        text-align: center;
+        font-family: 'Helvetica',sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        margin: 30px 5px 5px 5px;
+    }
+
+    &__hr-shelf {
+        margin: -40px auto 10px;
+        padding: 0;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid #ffd400;
+        box-shadow: 0 20px 20px -20px #ffff40;
+        width: 120px;
+    }
+
+    &__item-count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 5px 20px;
+    }
+
+    &__item-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 34px;
+        height: 34px;
+        margin: 5px 10px;
+        cursor: pointer;
+    }
+
+    &__item-number {
+        font-family: 'Helvetica',sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__buy {
+        display: block;
+        width: 300px;
+        height: 220px;
+    }
+
+    &__buy-title {
+        font-family: 'Helvetica',sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        padding: 5px;
+    }
+
+    &__buy-total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 30px;
+    }
+
+    &__buy-count {
+        font-family: 'Helvetica',sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__buy-price {
+        font-family: 'Helvetica',sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__buy-btn {
+        margin-top: 20px;
+        padding: 12px 16px;
+        width: 100%;
+        background-color: #ffd400;
+        font-family: 'Helvetica',sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        touch-action: manipulation;
+        cursor: pointer;
+        outline: 0;
+        border: none;
+    }
+
+    &__buy-btn:active {
+        opacity: 0.85;
+    }
+}
+

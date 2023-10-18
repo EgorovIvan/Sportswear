@@ -1,0 +1,79 @@
+@import "var";
+@import "mixins";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+    @include tablet {
+        width: 768px;
+    }
+
+    @include mobile {
+        width: 375px;
+    }
+
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        width: 60px;
+        height: 60px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list-item {
+        padding: 10px 15px;
+
+    }
+
+    &__list-link {
+        font-family: 'Helvetica','Arial',sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1.87px;
+    }
+
+    &__list-link:hover {
+        text-decoration: underline;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        padding-left: 20px;
+    }
+
+    &__icon img {
+        width: 36px;
+        height: 36px;
+    }
+
+    &__close {
+        width: 36px;
+        height: 36px;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+}
+

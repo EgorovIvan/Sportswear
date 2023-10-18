@@ -1,0 +1,30 @@
+@import "var";
+@import "mixins";
+
+body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    @include font(14px, 17px, 400);
+    color: $black-bkg;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 768px;
+    }
+
+    @include mobile {
+        width: 375px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+

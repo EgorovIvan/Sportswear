@@ -1,0 +1,26 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+@import "global";
+@import "reset";
+@import "header";
+@import "brand";
+@import "sales";
+@import "footer";
+@import "new-collection";
+@import "catalog";
+@import "search";
+@import "filter";
+@import "products";
+@import "products-cart";
+@import "cart";
+@import "admin";
+
+
+

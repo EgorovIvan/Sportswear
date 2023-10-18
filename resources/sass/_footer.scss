@@ -1,0 +1,55 @@
+@import "var";
+@import "mixins";
+
+.footer {
+
+    &__line {
+        background-color: #9F9F9F;
+        margin: 10px 20px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+
+    &__contacts {
+        display: block;
+        padding: 20px 40px 20px 20px;
+    }
+
+    &__contacts-title {
+        padding: 15px 0;
+    }
+
+    &__contacts-item {
+        padding: 15px 0;
+    }
+
+    &__help {
+        display: block;
+        padding: 20px 40px 20px 20px;
+    }
+
+    &__help-title {
+        padding: 15px 0;
+    }
+
+    &__help-item {
+        padding: 15px 0;
+    }
+
+    &__social {
+        display: block;
+        padding: 20px 40px 20px 20px;
+    }
+
+    &__social-title {
+        padding: 15px 0;
+    }
+
+    &__social-item {
+        padding: 15px 0;
+    }
+}

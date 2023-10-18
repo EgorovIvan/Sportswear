@@ -1,0 +1,39 @@
+@import "var";
+@import "mixins";
+
+.admin {
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 90px;
+        min-height: 60px;
+        //margin-top: 20px;
+    }
+
+    &__edit,
+    &__delete {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+    }
+    &__edit img,
+    &__delete img {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
+    }
+
+    &__edit img:hover,
+    &__delete img:hover {
+        width: 33px;
+        height: 33px;
+    }
+}

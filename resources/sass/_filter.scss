@@ -1,0 +1,51 @@
+@import "var";
+@import "mixins";
+
+.filter {
+    display: block;
+    margin: 0 auto;
+
+    &__title {
+        padding-bottom: 10px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px 10px 10px 0;
+    }
+
+    &__item-checkbox {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    &__item-text {
+        font-size: 16px;
+    }
+
+    &__button {
+        margin-top: 20px;
+        padding: 12px 16px;
+        width: 200px;
+        background-color: #ffd400;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        touch-action: manipulation;
+        cursor: pointer;
+        outline: 0;
+        border: none;
+    }
+
+    &__button:active {
+        opacity: 0.85;
+    }
+}
+
