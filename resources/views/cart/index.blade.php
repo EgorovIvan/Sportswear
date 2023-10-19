@@ -63,7 +63,7 @@
                         <p class="products-cart__buy-price">{{ $total }} ₽</p>
                     </div>
 
-                    <button class="products-cart__buy-btn">Перейти к оформлению</button>
+                    <a class="products-cart__buy-btn" href="{{ route('payments.index', [ 'total' => $total ]) }}">Перейти к оформлению</a>
                 </div>
             </div>
         </section>
